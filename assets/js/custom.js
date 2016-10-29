@@ -29,10 +29,10 @@ jQuery(function($){
 	/*  1. SEARCH BOX SLIDE
 	/* ----------------------------------------------------------- */ 
 
-	$('#search-icon').click(function(e){
+	/*$('#search-icon').click(function(e){
 		e.preventDefault();
      	$('.header-top').slideToggle(500);     
-  	});
+  	});*/
 	
 			
 	/* ----------------------------------------------------------- */
@@ -116,15 +116,13 @@ jQuery(function($){
 	/*  7. LOGIN MODAL WINDOW
 	/* ----------------------------------------------------------- */
 
-	$("#signup-btn").on('click', function(e){
-		$('#signup-content').show();
-		$('#login-content').hide();
+	$("#search-icon").on('click', function(e){
+		$('#search-form').show();
 		e.preventDefault();		
 	});
 
 	$("#login-btn").on('click', function(e){
 		$('#login-content').show();
-		$('#signup-content').hide();
 		e.preventDefault();
 				
 	});
