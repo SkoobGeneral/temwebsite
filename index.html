@@ -19,7 +19,7 @@
     <!-- Progress bar  -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-progressbar-3.3.4.css"/> 
      <!-- Theme color -->
-    <link id="switcher" href="assets/css/theme-color/green-theme.css" rel="stylesheet">
+    <link id="switcher" href="assets/css/green-theme.css" rel="stylesheet">
     <!-- Footable css -->
     <link href="assets/css/footable.bootstrap.min.css" rel="stylesheet">
 
@@ -113,24 +113,70 @@
       <div id="search-content" class="modal-content text-center">
         <div class="modal-header">
           <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button>
-          <h4 class="modal-title"><i class="fa fa-unlock-alt"></i>Search - TemPortal</h4>
+          <h4 class="modal-title"><i class="fa fa-search"></i>Búsqueda Rápida - TemAyuda</h4>
         </div>
         <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <input type="text" placeholder="Usuario" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Contraseña" class="form-control">
-            </div>
-             <div class="searchbox">
-              <label class="text-left"><input type="checkbox"><span>Remember me</span></label>
-              <button class="btn signin-btn" type="button">INGRESAR</button>
-            </div>                    
-          </form>
-        </div>
-        <div class="modal-footer footer-box">
-          <a href="#">Recordar Contraseña ?</a>
+          <table class="footableHelp table table-responsive table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th style="text-align: center;" data-breakpoints="">Id</th>
+                <th style="text-align: center;" data-breakpoints="xs">Pregunta</th>
+                <th style="text-align: center;" data-type="html" data-breakpoints="">Respuesta</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-expanded="false">
+                <td>01</td>
+                <td>Cómo iniciar sesión?</td>
+                <td><a href="#" data-toggle="modal" data-target="#login-form">Iniciar Sesión en TemPortal</a></td>
+              </tr>
+              <tr data-expanded="false">
+                <td>02</td>
+                <td>Cómo iniciar sesión?</td>
+                <td><a href="#" data-toggle="modal" data-target="#login-form">Iniciar Sesión en TemPortal</a></td>
+              </tr>
+              <tr data-expanded="false">
+                <td>03</td>
+                <td>Cómo iniciar sesión?</td>
+                <td><a href="#" data-toggle="modal" data-target="#login-form">Iniciar Sesión en TemPortal</a></td>
+              </tr>
+              <tr data-expanded="false">
+                <td>04</td>
+                <td>Cómo iniciar sesión?</td>
+                <td><a href="#" data-toggle="modal" data-target="#login-form">Iniciar Sesión en TemPortal</a></td>
+              </tr>
+              <tr data-expanded="false">
+                <td>05</td>
+                <td>Cómo iniciar sesión?</td>
+                <td><a href="#" data-toggle="modal" data-target="#login-form">Iniciar Sesión en TemPortal</a></td>
+              </tr>
+              <tr data-expanded="false">
+                <td>06</td>
+                <td>Cómo iniciar sesión?</td>
+                <td><a href="#" data-toggle="modal" data-target="#login-form">Iniciar Sesión en TemPortal</a></td>
+              </tr>
+              <tr data-expanded="false">
+                <td>07</td>
+                <td>Cómo iniciar sesión?</td>
+                <td><a href="#" data-toggle="modal" data-target="#login-form">Iniciar Sesión en TemPortal</a></td>
+              </tr>
+              <tr data-expanded="false">
+                <td>08</td>
+                <td>Cómo iniciar sesión?</td>
+                <td><a href="#" data-toggle="modal" data-target="#login-form">Iniciar Sesión en TemPortal</a></td>
+              </tr>
+              <tr data-expanded="false">
+                <td>09</td>
+                <td>Cómo iniciar sesión?</td>
+                <td><a href="#" data-toggle="modal" data-target="#login-form">Iniciar Sesión en TemPortal</a></td>
+              </tr>
+              <tr data-expanded="false">
+                <td>10</td>
+                <td>Cómo iniciar sesión?</td>
+                <td><a href="#" data-toggle="modal" data-target="#login-form">Iniciar Sesión en TemPortal</a></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
@@ -204,7 +250,7 @@
       <div class="container">
         <div class="navbar-header">
           <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <button type="button" class="navbar-toggle collapsed" style="z-index: 1;" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -220,30 +266,30 @@
           <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
             <li class="active"><a href="index.html">Inicio</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Servicios en Línea<span class="fa fa-angle-down"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Servicios en Línea <span class="fa fa-angle-down"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="blog-archive.html">Novedades</a></li>
-                <li><a href="blog-single-with-left-sidebar.html">Pagos PSE</a></li>
-                <li><a href="blog-single-with-right-sidebar.html">Cambio de Clave</a></li>
-                <li><a href="blog-single-with-right-sidebar.html">Buzón de Sugerencias y Peticiones</a></li>
+                <li><a href="#">Novedades</a></li>
+                <li><a href="#">Pagos PSE</a></li>
+                <li><a href="#">Cambio de Clave</a></li>
+                <li><a href="#">Sugerencias<br>y Peticiones</a></li>
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Organización<span class="fa fa-angle-down"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Organización <span class="fa fa-angle-down"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="blog-archive.html">Nuestra Empresa</a></li>
-                <li><a href="blog-single-with-left-sidebar.html">Gestión de Calidad</a></li>
-                <li><a href="blog-single-with-right-sidebar.html">Seguridad y Prevención</a></li>
-                <li><a href="blog-single-with-right-sidebar.html">Nuestros Clientes</a></li>
+                <li><a href="#">Nuestra Empresa</a></li>
+                <li><a href="#">Gestión de Calidad</a></li>
+                <li><a href="#">Seguridad y Prevención</a></li>
+                <li><a href="#">Nuestros Clientes</a></li>
+                <li><a href="#">Multimedia</a></li>
               </ul>
             </li>
-            <li><a href="portfolio.html">Registre su Contrato</a></li>
+            <li><a href="#">Registre su Contrato</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Afiliados<span class="fa fa-angle-down"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Afiliados <span class="fa fa-angle-down"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="blog-archive.html">Afiliados</a></li>
-                <li><a href="blog-single-with-left-sidebar.html">FUEC</a></li>
-                <li><a href="blog-single-with-right-sidebar.html">Mantenimiento</a></li>
+                <li><a href="#">FUEC</a></li>
+                <li><a href="#">Mantenimiento</a></li>
               </ul>
             </li>
             <!--<li><a href="404.html">404 Page</a></li>-->

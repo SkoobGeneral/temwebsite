@@ -7,7 +7,8 @@
 
 	Custom JS
 	
-	1. SEARCH BOX SLIDE
+	0. HEADER
+	1. SEARCH ENGINE
 	2. HOVER DROPDOWN MENU
 	3. BOOTSTRAP ACCORDION
 	4. SKILL PROGRESS BAR
@@ -26,14 +27,41 @@
 jQuery(function($){
 
 	/* ----------------------------------------------------------- */
-	/*  1. SEARCH BOX SLIDE
+	/*  0. HEADER
+	/* ----------------------------------------------------------- */ 
+	$( window ).scroll(function() {
+		var top = $('html').offset().top;
+		var element = $("#header").offset().top;
+		if (element>30){
+			$('.navbar-brand img').css('width','200');			
+			$('#menu-area').css('height','88');
+			return;
+		}
+		else{
+			$('.navbar-brand img').css('width','350');
+			$('#menu-area').css('height','120');
+			return;
+		}
+		
+	});
+	
+	/* ----------------------------------------------------------- */
+	/*  1. SEARCH ENGINE
 	/* ----------------------------------------------------------- */ 
 
-	/*$('#search-icon').click(function(e){
-		e.preventDefault();
-     	$('.header-top').slideToggle(500);     
-  	});*/
-	
+	jQuery(function($){
+		$('.footableHelp').footable({
+			"empty": "No hay registros",
+			"filtering": {"enabled": true,
+				"delay": 1,
+				"min": 1,
+				"placeholder": "Qué buscas?"},
+			"paging": {"enabled": true,
+				"limit": 3,
+				"size": 5},
+			"sorting": {"enabled": true}
+		});
+	});
 			
 	/* ----------------------------------------------------------- */
 	/*  2. HOVER DROPDOWN MENU
