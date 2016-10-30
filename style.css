@@ -136,6 +136,9 @@ img{
 	float: left;
 	display: inline;
 	width: 100%;
+  position: fixed;
+  top:0;
+  z-index: 1;
 }
 
 .header-top{
@@ -179,7 +182,7 @@ img{
 }
 
 .header-bottom{
-	background-color: rgba(0, 0, 0, 0.02);
+	background-color: rgba(255, 255, 255, 1);
 	border-bottom: 1px solid #e4e4e4;
 	color: #949494;
 	font-size: 12px;
@@ -209,6 +212,7 @@ img{
 
 .header-contact ul li:last-child{
 	border-right: 1px solid #e4e4e4;
+  margin-right: -20px;
 }
 .header-contact ul li a:hover{
   color:#179b66;
@@ -404,11 +408,16 @@ img{
 	display: inline;
 	float: left;
 	width: 100%;
-	position: relative;	
+  position: fixed;
+  z-index: 1;
+  padding-bottom: 30px;
+  top: 40px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 #menu-area #navbar {  
-  padding-right: 70px;
+  padding-right: 10px;
+  float: right;
 }
 
 #menu-area .navbar-default {
@@ -422,7 +431,6 @@ img{
   font-size: 25px;
   font-weight: bold;
   color:#19754c !important;
-  margin-top: 14px;
   padding:0;
   height: 85px;
 }
@@ -660,6 +668,7 @@ img{
 /*--------------------*/
 
 #feature{
+  margin-top:130px;
 	background-color: #fff;
 	display: inline;
 	float: left;
@@ -2489,7 +2498,6 @@ display: flex;
 @media(max-width:991px ){
 	#menu-area #navbar {
     padding-top: 5px;
-    padding-right: 55px;
   }
   .navbar-default .navbar-nav > li > a {  
     font-size: 13px;
@@ -2551,11 +2559,14 @@ display: flex;
   }
 }
 
-
-@media(max-width:767px ){
-  .header-bottom {    
-    padding: 0;   
+@media(min-width:767px) and (max-width:1199px) {
+  #menu-area #navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
+}
+@media(max-width:767px ){
   .phone, .mail {
     font-size: 10px;
   }
@@ -2571,8 +2582,11 @@ display: flex;
   #search {
     width: 100%;
   }
-  #menu-area #navbar {
-    padding-right: 15px;
+  #menu-area {
+    padding-bottom:0;
+  }
+  .navbar-brand img {
+    width: 70%;
   }
   .slider-img {
     display: none;
@@ -2593,6 +2607,9 @@ display: flex;
   .single-page-header-right .breadcrumb {
     text-align: center;
     margin-top: 20px;
+  }
+  #feature {
+    margin-top:90px;
   }
   .footer-left {
     text-align: center;
@@ -2733,7 +2750,13 @@ display: flex;
 
 }
 
-@media(max-width:400px ){
+@media(max-width:422px ){
+  .navbar-brand {
+    float: none !important;
+  }
+}
+
+@media(max-width:416px ){
   .header-contact ul li:last-child {
     display: none !important;
   }
@@ -2861,5 +2884,13 @@ display: flex;
   }
   .blog-archive-left .blog-news-img {
     height: 220px;
+  }
+}
+
+@media(max-width:285px ){
+  #search-icon {
+    position: absolute;
+    right: 85px;
+    top: 0px;
   }
 }
