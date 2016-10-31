@@ -20,7 +20,8 @@
 	10. CLIENTS BRAND SLIDER (SLICK SLIDER) 
 	11. SCROLL TOP BUTTON
 	12. PRELOADER 
-	13. WOW ANIMATION	
+	13. WOW ANIMATION
+	14. FOOTER	
 	
 **/
 
@@ -29,20 +30,30 @@ jQuery(function($){
 	/* ----------------------------------------------------------- */
 	/*  0. HEADER
 	/* ----------------------------------------------------------- */ 
-	$( window ).scroll(function() {
+	var documentWidth = $(window).width();
+	if(documentWidth<=416){
+		$('.navbar-brand img').css('width','120');
+	}
+	$(document).scroll(function() {
 		var top = $('html').offset().top;
 		var element = $("#header").offset().top;
-		if (element>30){
-			$('.navbar-brand img').css('width','200');			
-			$('#menu-area').css('height','88');
-			return;
+		documentWidth = $(window).width();
+		if (documentWidth>416){
+			if (element>30){
+				$('.navbar-brand img').css('width','200');			
+				$('#menu-area').css('height','88');
+				return;
+			}
+			else{
+				$('.navbar-brand img').css('width','350');
+				$('#menu-area').css('height','120');
+				return;
+			}
 		}
 		else{
-			$('.navbar-brand img').css('width','350');
-			$('#menu-area').css('height','120');
-			return;
+			$('.navbar-brand img').css('width','120');
+			$('#menu-area').css('height','90');
 		}
-		
 	});
 	
 	/* ----------------------------------------------------------- */
@@ -267,3 +278,27 @@ jQuery(function($){
     wow.init(); 
 	
 });
+   
+	/* ----------------------------------------------------------- */
+	/*  14. FOOTER
+	/* ----------------------------------------------------------- */ 
+
+		var isMobile = { 
+		Android: function() { return navigator.userAgent.match(/Android/i); }, 
+		BlackBerry: function() { return navigator.userAgent.match(/BlackBerry/i); }, 
+		iOS: function() { return navigator.userAgent.match(/iPhone|iPad|iPod/i); }, 
+		Opera: function() { return navigator.userAgent.match(/Opera Mini/i); }, 
+		Windows: function() { return navigator.userAgent.match(/IEMobile/i); }, 
+		any: function() { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); } };
+
+		jQuery(function($) {
+		    if (!isMobile.any()){
+		    	$('.isMobileClass').hide();
+		    	$('.isDesktopClass').show();
+		    	//alert("1");
+		    }
+		    if (isMobile.any()){
+		    	$('.isDesktopClass').hide();
+		    }
+		});
+		

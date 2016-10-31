@@ -101,7 +101,7 @@ img{
 
 .scrollToTop {
   bottom: 60px;
-  border-radius: 4px;
+  border-radius: 50%;
   display: none;
   font-size: 32px;
   line-height: 45px;
@@ -1571,7 +1571,8 @@ img{
 
 
 #footer{
-  background-color: #171717;
+  border-top: 2px solid #242424; 
+  background-color: #fff;
   display: inline;
   float: left;
   padding: 25px 0;
@@ -1585,18 +1586,19 @@ img{
 }
 
 .footer-left p {
-  color: #5c5c5c;
+  color: #000;
   font-size: 14px;
   margin: 0;
 }
 
 .footer-left p a{
-  color: #5c5c5c;
+  color: #000;
 }
 
 .footer-left p a:hover{
   text-decoration: none;
   outline: none;
+  color: #19754c;
 }
 
 .footer-right{
@@ -2775,6 +2777,12 @@ display: flex;
 @media(max-width:416px ){
   .header-contact ul li:last-child {
     display: none !important;
+  }
+  .navbar-brand img {
+    width: 160px !important;
+  }
+  #menu-area {
+    height: 64px;
   }
 }
 
