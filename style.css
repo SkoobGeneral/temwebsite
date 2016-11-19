@@ -826,7 +826,7 @@ img{
 /*END TILES*/
 
 #feature{
-  margin:10px auto;
+  margin:200px auto 15px;
 	background-color: #fff;
 	display: inline;
 	float: left;
@@ -2951,6 +2951,9 @@ display: flex;
   }
   #menu-area {
     height: 64px;
+  }
+  #feature {
+    margin: 140px auto 15px;
   }
 }
 
