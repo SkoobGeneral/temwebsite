@@ -765,6 +765,27 @@ img{
     background-color: #f8e9ea;
 }
 
+#tileTerminos{
+    /*background: rgb(0,93,233);*/
+    background: url('assets/images/terms.png') no-repeat center;
+    background-size: 100%;
+    background-color: #fff;
+}
+
+#tileRegistrarContrato{
+    /*background: rgb(0,93,233);*/
+    background: url('assets/images/inscripciones-registrar.png') no-repeat center;
+    background-size: 100%;
+    background-color: #f8c161;
+}
+
+#tileConsultarContrato{
+    /*background: rgb(0,93,233);*/
+    background: url('assets/images/inscripciones-consultar.png') no-repeat center;
+    background-size: 100%;
+    background-color: #83cfea;
+}
+
 #tileEmergencia{
     /*background-color: rgb(209,70,37);*/
     background-color: #FFFF4e;
@@ -826,12 +847,21 @@ img{
 /*END TILES*/
 
 #feature{
-  margin:200px auto 15px;
+  margin:205px auto 15px;
 	background-color: #fff;
 	display: inline;
 	float: left;
 	padding: 0;
 	width: 100%;
+}
+
+#isncripciones{
+  margin:205px auto 15px;
+  background-color: #fff;
+  display: inline;
+  float: left;
+  padding: 0;
+  width: 100%;
 }
 
 .title-area {
@@ -2644,7 +2674,7 @@ display: flex;
 	}
 	.main-slider {  
 		height: auto;    
-	}  
+	}
   
 	/*   portfolio plugin */
 
