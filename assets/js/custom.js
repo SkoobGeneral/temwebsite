@@ -41,7 +41,7 @@ jQuery(function($){
 		documentWidth = $(window).width();
 		if (documentWidth>416){
 			if (element>30){
-				$('.navbar-brand img').css('width','200');			
+				$('.navbar-brand img').css('width','200');
 				$('#menu-area').css('height','88');
 				return;
 			}

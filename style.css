@@ -700,7 +700,7 @@ img{
     padding:5px;
 }
 
-.tile {
+.tile, .tileFix {
   position: relative;
   border:2px solid #aaa;
   border-radius: 10px;
@@ -761,30 +761,37 @@ img{
 #tileSugerenciasPeticiones{
     /*background: rgb(0,93,233);*/
     background: url('assets/images/buzon.png') no-repeat center;
-    background-size: 100%;
+    background-size: cover;
     background-color: #f8e9ea;
 }
 
 #tileTerminos{
     /*background: rgb(0,93,233);*/
     background: url('assets/images/terms.png') no-repeat center;
-    background-size: 100%;
+    background-size: cover;
     background-color: #fff;
 }
-
+/*Inscripciones*/
 #tileRegistrarContrato{
     /*background: rgb(0,93,233);*/
+    margin:10px;
+    height: 185px;
+    width: 185px;
     background: url('assets/images/inscripciones-registrar.png') no-repeat center;
-    background-size: 100%;
+    background-size: cover;
     background-color: #f8c161;
 }
 
 #tileConsultarContrato{
     /*background: rgb(0,93,233);*/
+    margin:10px;
+    height: 185px;
+    width: 185px;
     background: url('assets/images/inscripciones-consultar.png') no-repeat center;
-    background-size: 100%;
+    background-size: cover;
     background-color: #83cfea;
 }
+/*END Inscripciones*/
 
 #tileEmergencia{
     /*background-color: rgb(209,70,37);*/
@@ -809,7 +816,7 @@ img{
     font-weight: lighter;
 }
 
-.tile:hover h3{
+.tile:hover h3, .tileFix:hover h3{
   display: block;
 }
 
@@ -822,12 +829,11 @@ img{
 }
 
 .widgetAnchor:hover {
-  display: block;
   opacity: 1;
   background: rgba(0,0,0,0.5) !important;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
-  transform:scale(1.07);
+  transform:scale(1.05);
 }
 
 .tilecaptionhidden {
@@ -846,22 +852,13 @@ img{
 
 /*END TILES*/
 
-#feature{
+#feature, #inscripciones, #puntosEncuentro{
   margin:205px auto 15px;
 	background-color: #fff;
 	display: inline;
 	float: left;
 	padding: 0;
 	width: 100%;
-}
-
-#isncripciones{
-  margin:205px auto 15px;
-  background-color: #fff;
-  display: inline;
-  float: left;
-  padding: 0;
-  width: 100%;
 }
 
 .title-area {
@@ -2886,6 +2883,10 @@ display: flex;
     top: 80%;
     width: 40px;
   }
+  #tileRegistrarContrato, #tileConsultarContrato {
+    height: 140px;
+    width: 140px;
+  }
   .tilecaption, .tilecaptionhidden {
     font-size: 130%;
   }
@@ -2982,10 +2983,11 @@ display: flex;
   #menu-area {
     height: 64px;
   }
-  #feature {
+  #feature, #inscripciones, #puntosEncuentro {
     margin: 140px auto 15px;
   }
 }
+
 
 @media(max-width:360px ){
   .login {    
@@ -3087,6 +3089,12 @@ display: flex;
   
 } 
 
+@media(max-width:350px ){
+  #tileRegistrarContrato, #tileConsultarContrato {
+    height: 120px;
+    width: 120px;
+  }
+}
 
 @media(max-width:320px ){
 	#login-form .modal-dialog {  
@@ -3100,6 +3108,10 @@ display: flex;
   }
   .tilecaption, .tilecaptionhidden {
     font-size: 95%;
+  }
+  #tileRegistrarContrato, #tileConsultarContrato {
+    height: 100px;
+    width: 100px;
   }
   .subscribe-area h2 {
     font-size: 22px;
@@ -3116,6 +3128,9 @@ display: flex;
   .blog-archive-left .blog-news-img {
     height: 220px;
   }
+  #tileRegistrarContrato, #tileConsultarContrato {
+    float:none !important;
+  }
 }
 
 @media(max-width:285px ){
@@ -3126,5 +3141,12 @@ display: flex;
   }
   .tilecaption, .tilecaptionhidden {
     font-size: 80%;
+  }
+}
+@media(max-width:269px ){
+  #inscripciones .container div{
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
   }
 }
