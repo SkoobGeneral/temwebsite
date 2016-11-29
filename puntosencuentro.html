@@ -32,7 +32,17 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <!-- Lato for Title -->
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>    
-    
+    <style type="text/css">
+      /* Puntos de encuentro */  
+      .vermapa {
+        color: green !important;
+      }
+      .vermapa:hover {
+        color: #0a8a61 !important;
+      }
+
+      /* End Puntos de encuentro */  
+    </style>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -244,8 +254,8 @@
                 <li><a href="#">Bitácora de Flota</a></li>
               </ul>
             </li>
-            <li class="active"><a href="inscripciones.html">Inscripciones </a></li>
-            <li><a href="#">Puntos de Encuentro </a></li>
+            <li class=""><a href="inscripciones.html">Inscripciones </a></li>
+            <li class="active"><a href="#">Puntos de Encuentro </a></li>
             <!--<li><a href="404.html">404 Page</a></li>-->
           </ul>                     
         </div><!--/.nav-collapse -->
@@ -254,42 +264,197 @@
   </section>
   <!-- END MENU --> 
 
-  <section id="puntosEncuentro">
-    <div class="panel-group" id="accordion">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Collapsible Group 1</a>
-          </h4>
-        </div>
-        <div id="collapse1" class="panel-collapse collapse in">
-          <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+  <section id="puntosEncuentro" class="container" style="vertical-align: top;">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="panel-group" id="accordionColegios" style="min-width: 200px; max-width: 300px; padding:10px; margin: 10px auto;">
+          <h3 style="text-align: center;">Colegios</h3>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionColegios" href="#colegio1">Tilatá</a>
+              </h4>
+            </div>
+            <div id="colegio1" class="panel-collapse collapse inx">
+              <div class="panel-body">
+                <ul style="list-style-type: square; margin:10px 10px 10px 20px;">
+                  <li><h5>Cra 15 Calle 87, Parque El Virrey, frente a las flores. <a class="vermapa" href="https://www.google.com.co/maps/@4.6726159,-74.0542613,19z" target="_blank">Ver mapa</a></h5></li>
+                  <li><h5>Parqueadero Carulla Calle 116 Alhambra. <a class="vermapa" href="https://www.google.com.co/maps/@4.6987873,-74.0569178,19z" target="_blank">Ver mapa</a></h5></li>
+                  <li><h5>Parqueadero Carullla Calle 147 Cra 7A, costado occidental. <a class="vermapa" href="https://www.google.com.co/maps/@4.7232077,-74.0265192,19z" target="_blank">Ver mapa</a></h5></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionColegios" href="#colegio2">Clara Casas Morales</a>
+              </h4>
+            </div>
+            <div id="colegio2" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul style="list-style-type: square; margin:10px 10px 10px 20px;">
+                  <li><h5>Cra 15 Calle 87, Parque El Virrey, frente a las flores.</h5></li>
+                  <li><h5>Parqueadero Carulla Calle 116 Alhambra.</h5></li>
+                  <li><h5>Parqueadero Carullla Calle 147 Cra 7A, costado occidental.</h5></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionColegios" href="#colegio3">Los Tréboles</a>
+              </h4>
+            </div>
+            <div id="colegio3" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul style="list-style-type: square; margin:10px 10px 10px 20px;">
+                  <li><h5>Cra 15 Calle 87, Parque El Virrey, frente a las flores.</h5></li>
+                  <li><h5>Parqueadero Carulla Calle 116 Alhambra.</h5></li>
+                  <li><h5>Parqueadero Carullla Calle 147 Cra 7A, costado occidental.</h5></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionColegios" href="#colegio4">Ekiraya Educación Montessori</a>
+              </h4>
+            </div>
+            <div id="colegio4" class="panel-collapse collapse inx">
+              <div class="panel-body">
+                <ul style="list-style-type: square; margin:10px 10px 10px 20px;">
+                  <li><h5>Cra 15 Calle 87, Parque El Virrey, frente a las flores.</h5></li>
+                  <li><h5>Parqueadero Carulla Calle 116 Alhambra.</h5></li>
+                  <li><h5>Parqueadero Carullla Calle 147 Cra 7A, costado occidental.</h5></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionColegios" href="#colegio5">Nuestra Señora del Buen Consejo</a>
+              </h4>
+            </div>
+            <div id="colegio5" class="panel-collapse collapse inx">
+              <div class="panel-body">
+                <ul style="list-style-type: square; margin:10px 10px 10px 20px;">
+                  <li><h5>Cra 15 Calle 87, Parque El Virrey, frente a las flores.</h5></li>
+                  <li><h5>Parqueadero Carulla Calle 116 Alhambra.</h5></li>
+                  <li><h5>Parqueadero Carullla Calle 147 Cra 7A, costado occidental.</h5></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Collapsible Group 2</a>
-          </h4>
-        </div>
-        <div id="collapse2" class="panel-collapse collapse">
-          <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      <div class="col-sm-4">
+        <div class="panel-group" id="accordionJardines" style="min-width: 200px; max-width: 300px; padding:10px; margin: 10px auto;">
+          <h3 style="text-align: center;">Jardines</h3>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionJardines" href="#jardin1">Mundo Montessori</a>
+              </h4>
+            </div>
+            <div id="jardin1" class="panel-collapse collapse inx">
+              <div class="panel-body">
+                <ul style="list-style-type: square; margin:10px 10px 10px 20px;">
+                  <li><h5>Cra 15 Calle 87, Parque El Virrey, frente a las flores.</h5></li>
+                  <li><h5>Parqueadero Carulla Calle 116 Alhambra.</h5></li>
+                  <li><h5>Parqueadero Carullla Calle 147 Cra 7A, costado occidental.</h5></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionJardines" href="#jardin2">Huellas</a>
+              </h4>
+            </div>
+            <div id="jardin2" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul style="list-style-type: square; margin:10px 10px 10px 20px;">
+                  <li><h5>Cra 15 Calle 87, Parque El Virrey, frente a las flores.</h5></li>
+                  <li><h5>Parqueadero Carulla Calle 116 Alhambra.</h5></li>
+                  <li><h5>Parqueadero Carullla Calle 147 Cra 7A, costado occidental.</h5></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionJardines" href="#jardin3">Abrakadabra</a>
+              </h4>
+            </div>
+            <div id="jardin3" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul style="list-style-type: square; margin:10px 10px 10px 20px;">
+                  <li><h5>Cra 15 Calle 87, Parque El Virrey, frente a las flores.</h5></li>
+                  <li><h5>Parqueadero Carulla Calle 116 Alhambra.</h5></li>
+                  <li><h5>Parqueadero Carullla Calle 147 Cra 7A, costado occidental.</h5></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionJardines" href="#jardin4">BaBidiBu</a>
+              </h4>
+            </div>
+            <div id="jardin4" class="panel-collapse collapse inx">
+              <div class="panel-body">
+                <ul style="list-style-type: square; margin:10px 10px 10px 20px;">
+                  <li><h5>Cra 15 Calle 87, Parque El Virrey, frente a las flores.</h5></li>
+                  <li><h5>Parqueadero Carulla Calle 116 Alhambra.</h5></li>
+                  <li><h5>Parqueadero Carullla Calle 147 Cra 7A, costado occidental.</h5></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Collapsible Group 3</a>
-          </h4>
-        </div>
-        <div id="collapse3" class="panel-collapse collapse">
-          <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      <div class="col-sm-4">
+        <div class="panel-group" id="accordionVacacionales" style="min-width: 200px; max-width: 300px; padding:10px; margin: 10px auto;">
+          <h3 style="text-align: center;">Campamentos Vacacionales</h3>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionVacacionales" href="#vacacional1">Club Campestre El Rancho</a>
+              </h4>
+            </div>
+            <div id="vacacional1" class="panel-collapse collapse inx">
+              <div class="panel-body">
+                <ul style="list-style-type: square; margin:10px 10px 10px 20px;">
+                  <li><h5>Cra 15 Calle 87, Parque El Virrey, frente a las flores.</h5></li>
+                  <li><h5>Parqueadero Carulla Calle 116 Alhambra.</h5></li>
+                  <li><h5>Parqueadero Carullla Calle 147 Cra 7A, costado occidental.</h5></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionVacacionales" href="#vacacional2">Club Campestre Guaymaral</a>
+              </h4>
+            </div>
+            <div id="vacacional2" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul style="list-style-type: square; margin:10px 10px 10px 20px;">
+                  <li><h5>Cra 15 Calle 87, Parque El Virrey, frente a las flores.</h5></li>
+                  <li><h5>Parqueadero Carulla Calle 116 Alhambra.</h5></li>
+                  <li><h5>Parqueadero Carullla Calle 147 Cra 7A, costado occidental.</h5></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
