@@ -54,6 +54,13 @@ body {
 	color: #838282;
 }
 
+.bgwatermark {
+  opacity: 0.08;
+  position: absolute;
+  background: url('../images/tembird.png') repeat;
+  max-width: 100%;
+}
+
 ul{
 	padding: 0;
 	margin: 0;
@@ -514,6 +521,15 @@ img{
   top: 50px;
 }
 
+.active > a.dd {
+  background-color: #ECFFF0 !important;
+  color: #62D57B !important;
+}
+
+.active > a.dd:hover {
+  background-color: rgba(9,74,51,0.9) !important;
+}
+
 .main-nav .dropdown:hover .dropdown-toggle::before{	
 	width: 100%;
 }
@@ -556,7 +572,8 @@ img{
 
 
 #slider{
-	margin-top: 150px; 
+	margin-top: 150px;
+  margin-bottom: 50px;
   display: inline;
 	float: left;
 	width: 100%;
@@ -793,6 +810,28 @@ img{
 }
 /*END Inscripciones*/
 
+/*Bitacora*/
+#tileFuec{
+    /*background: rgb(0,93,233);*/
+    margin:10px;
+    height: 185px;
+    width: 185px;
+    background: url('assets/images/fuec.png') no-repeat center;
+    background-size: cover;
+    background-color: #ffffff;
+}
+
+#tileMantenimiento{
+    /*background: rgb(0,93,233);*/
+    margin:10px;
+    height: 185px;
+    width: 185px;
+    background: url('assets/images/mantenimiento.png') no-repeat center;
+    background-size: cover;
+    background-color: #ffffff;
+}
+/*END Bitacora*/
+
 #tileEmergencia{
     /*background-color: rgb(209,70,37);*/
     background-color: #FFFF4e;
@@ -830,7 +869,7 @@ img{
 
 .widgetAnchor:hover {
   opacity: 1;
-  background: rgba(0,0,0,0.5) !important;
+  background: rgba(9,74,51,0.8) !important;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   transform:scale(1.05);
@@ -2753,6 +2792,11 @@ display: flex;
 }
 
 @media(max-width:767px ){
+  #menu-area{
+    position: absolute;
+    z-index: 999;
+  }
+
   .phone, .mail {
     font-size: 10px;
   }
@@ -2780,6 +2824,11 @@ display: flex;
   }
   #menu-area {
     padding-bottom:0;
+  }
+
+  .active > a.dropdown-toggle {
+    background-color: #ECFFF0 !important;
+    color: #62D57B !important;
   }
   .navbar-brand img {
     width: 70%;
