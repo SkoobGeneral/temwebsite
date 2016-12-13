@@ -2834,6 +2834,14 @@ display: flex;
     width: 70%;
   }
 
+  .bgwatermark {
+    max-width:80%;
+  }
+
+  .imageResponsive {
+    width: 40%;
+  }
+
   .main-slider .slick-prev, .main-slider .slick-next {
     height: 40px;
     top: 80%;
@@ -3146,7 +3154,13 @@ display: flex;
 }
 
 @media(max-width:320px ){
-	#login-form .modal-dialog {  
+	.panel-body p {
+    margin:0 !important;
+  }
+  .imageResponsive {
+    float:none !important;
+  }
+  #login-form .modal-dialog {  
     width: 300px;
   }
   .footer-box {
