@@ -61,6 +61,8 @@ body {
   max-width: 100%;
 }
 
+.bold{}
+
 ul{
 	padding: 0;
 	margin: 0;
@@ -623,7 +625,7 @@ img{
   top: 48%;
   height: 50px;
   width: 50px;
-  z-index: 999;
+  z-index: 990;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
@@ -892,7 +894,7 @@ img{
 /*END TILES*/
 
 #feature, #inscripciones, #puntosEncuentro{
-  margin:205px auto 15px;
+  margin:170px auto 15px;
 	background-color: #fff;
 	display: inline;
 	float: left;
@@ -937,16 +939,19 @@ img{
 .single-feature{
 	display: inline;
 	float: left;
+  text-align: center;
 	margin-bottom: 40px;
 	width: 100%;
 }
 
 .single-feature:hover .feature-icon{
-	color: #444;
+	/*color: #444;*/
 }
 
 .single-feature .feature-icon {
-  font-size: 35px;
+  display: block;
+  font-size: 45px;
+  text-align: center;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
@@ -955,13 +960,14 @@ img{
 .feat-title{
 	font-weight: normal;
 	font-size: 20px;
+  text-align: center;
 	-webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
 }
 
 .single-feature:hover .feat-title{
-	color: #444;
+	/*color: #444;*/
 }
 
 .single-feature p {
