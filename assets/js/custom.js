@@ -173,7 +173,6 @@ jQuery(function($){
 	$("#login-btn").on('click', function(e){
 		$('#login-content').show();
 		e.preventDefault();
-				
 	});
 
 	/* ----------------------------------------------------------- */
@@ -319,7 +318,8 @@ jQuery(function($){
 	$( document ).ready(function() {
     $(".tile").height($("#tile1").width());
     $(".carousel").height($("#tile1").width());
-     $(".item").height($("#tile1").width());
+    $(".item").height($("#tile1").width());
+
      
     $(window).resize(function() {
     if(this.resizeTO) clearTimeout(this.resizeTO);

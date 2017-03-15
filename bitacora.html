@@ -241,11 +241,10 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Organización <span class="fa fa-angle-down"></span></a>
               <ul class="dropdown-menu active" role="menu">
                 <li><a href="#">Historia</a></li>
-                <li><a href="#">Gestión de Calidad</a></li>
+                <li><a href="calidad.html">Gestión de Calidad</a></li>
                 <li><a href="#">Seguridad y Prevención</a></li>
                 <li><a href="clientes.html">Nuestros Clientes</a></li>
                 <li><a href="politicas.html">Políticas</a></li>
-                <li><a href="#">Multimedia</a></li>
                 <li class="active"><a href="bitacora.html">Bitácora de Flota</a></li>
               </ul>
             </li>
@@ -258,31 +257,73 @@
     </nav>
   </section>
   <!-- END MENU --> 
-
-  <section id="inscripciones">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="title-area">
-          <h1 class="title wow pulse" data-wow-iteration="infinite" data-wow-duration="5.0s" data-wow-delay="1.0s"><img src="assets/images/temtext-small.png" style="max-width: 250px; margin:6px;" alt="TemColombia"><br>Bitácora de Flota</h1>
-        </div>
+    <section id="afiliadosDashboard">
+      <div class="title-area">
+        <h1 class="title wow pulse" data-wow-iteration="infinite" data-wow-duration="5.0s" data-wow-delay="1.0s"><img src="assets/images/temtext-small.png" style="max-width: 250px; margin:6px;" alt="TemColombia"><br>Bitácora de Flota</h1>
       </div>
-    </div>
-    <div class="container" style="max-width: 450px;">
-      <div class="pull-left wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.10s">
-      <h3 style="text-align: center;">FUEC</h3>
-        <a href="#">
-        <div id="tileFuec" class="tileFix widgetAnchor">
-          <h3 class="tilecaptionhidden">FUEC</h3>
+    <div class="container dynamicTile">
+      <div class="row" style="margin-bottom:30px;">
+        <div class="col-sm-2 col-xs-4 wow bounceInUp" data-wow-offset="-300" data-wow-duration="1.0s" data-wow-delay="1s">
+          <div id="tile1" class="tile">
+             
+              <div class="carousel slide" data-ride="carousel">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active" id="tileCaption1">
+                    <h3 class="tilecaption">FUEC</h3>
+                  </div>
+                  <div class="item" id="tileCaption2">
+                    <h3 class="tilecaption">Mantenimiento</h3>
+                  </div>
+                  <div class="item" id="tileCaption3">
+                    <h3 class="tilecaption">Multimedia</h3>
+                  </div>
+                  <div class="item" id="tileCaption4">
+                    <h3 class="tilecaption">Buzón</h3>
+                  </div>
+                  <div class="item" id="tileCaption5">
+                    <h3 class="tilecaption">Cuenta Cobro - IBC</h3>
+                  </div>
+                </div>
+              </div>
+               
+          </div>
         </div>
-        </a>
-      </div>
-      <div class="pull-right wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.30s">
-        <h3 style="text-align: center;">Mantenimiento</h3>
-        <a href="#">
-        <div id="tileMantenimiento" class="tileFix widgetAnchor">
-          <h3 class="tilecaptionhidden">Mantenimiento</h3>
+        <div class="col-sm-2 col-xs-4 wow bounceInUp"  data-wow-offset="-300" data-wow-duration="1.1s" data-wow-delay="1.30s">
+          <a href="#">
+          <div id="tileFuec" class="tile tileFix widgetAnchor wow pulse" data-wow-duration="5.0s" data-wow-delay="1s">
+            <h3 class="tilecaptionhidden">FUEC</h3>
+          </div>
+          </a>
         </div>
-        </a>
+        <div class="col-sm-2 col-xs-4 wow bounceInUp" data-wow-offset="-300" data-wow-duration="1.2s" data-wow-delay="1.50s">
+          <a href="#">
+          <div id="tileMantenimiento" class="tile tileFix widgetAnchor wow pulse" data-wow-duration="5.0s" data-wow-delay="1s">
+            <h3 class="tilecaptionhidden">Mantenimiento</h3>
+          </div>
+          </a>
+        </div>
+        <div class="col-sm-2 col-xs-4 wow bounceInUp" data-wow-offset="-300" data-wow-duration="1.3s" data-wow-delay="1.70s">
+          <a href="#">
+          <div id="tileMultimedia" class="tile tileFix widgetAnchor wow pulse" data-wow-duration="5.0s" data-wow-delay="1s">
+            <h3 class="tilecaptionhidden">Multimedia</h3>   
+          </div>
+          </a>
+        </div>
+        <div class="col-sm-2 col-xs-4 wow bounceInUp" data-wow-offset="-300" data-wow-duration="1.4s" data-wow-delay="1.90s">
+          <a href="#">
+          <div id="tileBuzon" class="tile tileFix widgetAnchor wow pulse" data-wow-duration="5.0s" data-wow-delay="1s">
+            <h3 class="tilecaptionhidden">Buzón</h3>
+          </div>
+          </a>
+        </div>
+        <div class="col-sm-2 col-xs-4 wow bounceInUp" data-wow-offset="-300" data-wow-duration="1.5s" data-wow-delay="2.10s">
+          <a href="#">
+          <div id="tileCuentaCobro" class="tile tileFix widgetAnchor wow pulse" data-wow-duration="5.0s" data-wow-delay="1s">
+            <h3 class="tilecaptionhidden">Cuenta Cobro - IBC</h3>
+          </div>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -341,6 +382,37 @@
  
   <!-- Custom js -->
   <script type="text/javascript" src="assets/js/custom.js"></script>
+
+  <script type="text/javascript">
+    function checkTileCaptions(){
+      if($('#tileCaption1').is('.active')){
+        $('#tileFuec').css("animation-iteration-count", "infinite");
+      }else{
+        $('#tileFuec').css("animation-iteration-count", "0");
+      }
+      if($('#tileCaption2').is('.active')){
+        $('#tileMantenimiento').css("animation-iteration-count", "infinite");
+      }else{
+        $('#tileMantenimiento').css("animation-iteration-count", "0");
+      }
+      if($('#tileCaption3').is('.active')){
+        $('#tileMultimedia').css("animation-iteration-count", "infinite");
+      }else{
+        $('#tileMultimedia').css("animation-iteration-count", "0");
+      }
+      if($('#tileCaption4').is('.active')){
+        $('#tileBuzon').css("animation-iteration-count", "infinite");
+      }else{
+        $('#tileBuzon').css("animation-iteration-count", "0");
+      }
+      if($('#tileCaption5').is('.active')){
+        $('#tileCuentaCobro').css("animation-iteration-count", "infinite");
+      }else{
+        $('#tileCuentaCobro').css("animation-iteration-count", "0");
+      }
+    };
+    setInterval(checkTileCaptions,100);
+  </script>
   
   </body>
 </html>

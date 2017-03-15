@@ -218,6 +218,8 @@ img{
 	transition: all 0.3s ease 0s;
 }
 
+.xheader-bottom .row {margin:0!important;}
+
 .header-contact{
 	display: inline;
 	float: left;
@@ -612,7 +614,7 @@ img{
 }
 
 .slide-content {
-  background-color: rgba(0, 0, 0, 0.6);
+  /*background-color: rgba(0, 0, 0, 0.6);*/
   height: 100%;
   left: 0;
   position: absolute;
@@ -712,6 +714,13 @@ img{
 	float: left;
 	padding: 0 30px;
 	width: 100%; 
+}
+
+.certificationImage {
+  max-width: 150px;
+  max-height: 150px;
+  padding: 5px;
+  margin: 10px;
 }
 
 /*--------------------*/
@@ -824,9 +833,6 @@ img{
 /*Bitacora*/
 #tileFuec{
     /*background: rgb(0,93,233);*/
-    margin:10px;
-    height: 185px;
-    width: 185px;
     background: url('assets/images/fuec.png') no-repeat center;
     background-size: cover;
     background-color: #ffffff;
@@ -834,13 +840,33 @@ img{
 
 #tileMantenimiento{
     /*background: rgb(0,93,233);*/
-    margin:10px;
-    height: 185px;
-    width: 185px;
     background: url('assets/images/mantenimiento.png') no-repeat center;
     background-size: cover;
     background-color: #ffffff;
 }
+
+#tileMultimedia{
+    /*background: rgb(0,93,233);*/
+    background: url('assets/images/multimedia.png') no-repeat center;
+    background-size: cover;
+    background-color: #fff;
+}
+
+#tileBuzon{
+    /*background: rgb(0,93,233);*/
+    background: url('assets/images/buzonafiliados.png') no-repeat center;
+    background-size: cover;
+    background-color: #f8e9ea;
+}
+
+#tileCuentaCobro{
+    /*background: rgb(0,93,233);*/
+    background: url('assets/images/cuentacobro.png') no-repeat center;
+    background-size: cover;
+    /*background-color: #ABDDAB;*/
+}
+
+
 /*END Bitacora*/
 
 #tileEmergencia{
@@ -902,8 +928,8 @@ img{
 
 /*END TILES*/
 
-#feature, #inscripciones, #puntosEncuentro{
-  margin:170px auto 15px;
+#feature, #afiliadosDashboard, #inscripciones, #puntosEncuentro, #calidad{
+  margin: 180px auto 15px;
 	background-color: #fff;
 	display: inline;
 	float: left;
@@ -2084,6 +2110,10 @@ display: flex;
 	margin-top: 15px;	
 }
 
+body.modal-open {
+  position: fixed;
+}
+
 .modal-close-btn{
 	border: 2px solid #000;
 	border-radius: 50%;
@@ -2870,6 +2900,13 @@ display: flex;
   .slide-article {
     padding-top: 10px;
   }
+
+  .certificationImage {
+    max-width: 100px !important;
+    max-height: 100px !important;
+    padding: 3px;  
+  }
+
   .title-area {
     padding: 0 30px;
   }
@@ -2916,6 +2953,12 @@ display: flex;
 	.single-portfolio{
 		width: 50%;
 	}
+
+  .certificationImage {
+    max-width: 70px !important;
+    max-height: 70px !important;
+    margin: 5px !important;
+  }
 	
   .tilecaption, .tilecaptionhidden {
     font-size: 130%;
@@ -3056,7 +3099,7 @@ display: flex;
   #menu-area {
     height: 64px;
   }
-  #feature, #inscripciones, #puntosEncuentro {
+  #feature, #afiliadosDashboard, #inscripciones, #puntosEncuentro, #calidad {
     margin: 140px auto 15px;
   }
 }
@@ -3106,6 +3149,7 @@ display: flex;
     font-size: 12px;
     padding: 5px 8px;
   }
+
   #testimonial .title-area {
     padding: 0;
   }

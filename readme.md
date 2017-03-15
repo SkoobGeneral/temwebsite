@@ -1,12 +1,5 @@
-Cambiar en el index el Tem (Tabitha)
-Poner el correo abajo
-Servicios en Linea
+Gestion de calidad - > Mapa Conceptual (hacer bonito eso)
 
-Bitácora de Flota
+Campañas institucionales en el dashboard
 
-FUEC
-Mantenimiento
-Pedagógicos (Videos 1 y 2)
-
-
-Uso y Terminos = Políticas
+Quitar Multimedia del menu
