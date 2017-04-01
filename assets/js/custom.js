@@ -23,6 +23,7 @@
 	13. WOW ANIMATION
 	14. FOOTER
 	15. TILES
+	16. MULTIMEDIA
 	
 **/
 
@@ -36,13 +37,13 @@ jQuery(function($){
 	if(documentWidth<=416){
 		$('.navbar-brand img').css('width','120');
 	}
-	function resizeLogo(){
+	/*function resizeLogo(){
 		$(document).scroll(function() {
 			var top = $('html').offset().top;
 			var element = $("#header").offset().top;
 			documentWidth = $(window).width();
 			if (documentWidth>767){
-				if (element>30){
+				if (element>50){
 					$('.navbar-brand img').css('width','200');
 					$('#menu-area').css('height','88');
 					return;
@@ -53,17 +54,23 @@ jQuery(function($){
 					return;
 				}
 			}
-			
 		});
-	}
-	resizeLogo();
-	$(window).on('resize orientationChange', function(event) {
+	}*/
+	//resizeLogo();
+	$(window).on('resize orientationChange', function resize (event) {
     	documentWidth = $(window).width();
 		if (documentWidth<416){
 			$('.navbar-brand img').css('width','350');
-			$('#menu-area').css('height','120');
+			$('#menu-area').css('height','88');
 		}
+		else{
+			$('.navbar-brand img').css('width','200');
+			$('#menu-area').css('height','88');
+			return;
+		}
+	resize();
 	});
+
 
 	
 	/* ----------------------------------------------------------- */
@@ -334,4 +341,72 @@ jQuery(function($){
         $(".item").height($("#tile1").width());
     });
 
+	/* ----------------------------------------------------------- */
+	/*  16. MULTIMEDIA
+	/* ----------------------------------------------------------- */ 		
+
+    /*
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '100%',
+          width: '100%',
+          playerVars: {
+                    autoplay: 1,
+                    loop: 1,
+                    controls: 0,
+                    showinfo: 0,
+                    autohide: 1,
+                    modestbranding: 1,
+                    disablekb: 1,
+                    vq: 'hd1080'},
+          videoId: '_wP3zZAn4ck',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+      function onPlayerReady(event) {
+        event.target.playVideo();
+        player.mute();
+      }
+
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 10000);
+        }
+        if (event.data == 5){
+        	event.target.playVideo();
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }*/
+
+      $(document).ready(function () {
+	    	$(".arrow-left").bind("click", function (event) {
+	        	event.preventDefault();
+	        	$("#list-container").stop().animate({
+	            	scrollLeft: "-=200"
+	        	}, 750);
+	    	});
+	    	$(".arrow-right").bind("click", function (event) {
+	        	event.preventDefault();
+	        	$("#list-container").stop().animate({
+	            	scrollLeft: "+=200"
+	        	}, 750);
+	    	});
+		});
+
+      $('.vid-list').click(function(event){
+		$('.vid-item').removeClass('activeItem activeText');
+		$(event.target).closest('.vid-item').addClass('activeItem activeText');
+	})
 });

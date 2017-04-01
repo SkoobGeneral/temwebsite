@@ -1,5 +1,14 @@
-Gestion de calidad - > Mapa Conceptual (hacer bonito eso)
-
 Campañas institucionales en el dashboard
 
-Quitar Multimedia del menu
+Usos y Condiciones panel pop up?
+
+música de fondo tenue
+
+texto resaltado imagen canal comms
+
+temcolombia.com no funciona (alias)
+
+
+
+Servicios en Linea - Padres de famlia
+Bitácora de afiliados - TemColombia
