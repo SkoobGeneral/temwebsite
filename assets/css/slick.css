@@ -5,6 +5,12 @@
 
     display: block;
 
+    /*BEGIN CUSTOM*/
+    object-fit: cover !important;
+    width: 100% !important;
+    height: 100% !important;
+    /*END CUSTOM*/
+
     -moz-box-sizing: border-box;
          box-sizing: border-box;
 
@@ -27,6 +33,11 @@
     display: block;
     overflow: hidden;
 
+    /*BEGIN CUSTOM*/
+    object-fit: cover !important;
+    width: 100% !important;
+    height: auto !important;
+    /*END CUSTOM*/
     margin: 0;
     padding: 0;
 }

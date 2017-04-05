@@ -207,7 +207,7 @@ img{
 
 .header-bottom{
 	background-color: rgba(255, 255, 255, 1);
-	border-bottom: 1px solid #e4e4e4;
+	border: 1px solid #e4e4e4;
 	color: #949494;
 	font-size: 12px;
 	height: 40px;
@@ -922,12 +922,14 @@ marquee {
 /*--------------------*/
 
 
-#slider{
+#slider, #feature{
 	margin-top: 128px;
   margin-bottom: 50px;
   display: inline;
 	float: left;
-	width: 100%;
+	object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .main-slider {
@@ -935,6 +937,7 @@ marquee {
   float: left;
   height: 600px;
   margin-bottom: 0;
+  object-fit: cover;
   width: 100%;
 }
 .main-slider .slick-list {  
@@ -944,11 +947,13 @@ marquee {
 .single-slide{
 	float: left;
 	display: inline;
-	width: 100%;
+	object-fit: cover;
+  width: 100%;
 }
 
 .single-slide img{
-	width: 100%;
+	object-fit: cover;
+  width: 100%;
 }
 
 .slide-content {
@@ -957,6 +962,7 @@ marquee {
   left: 0;
   position: absolute;
   top: 0;
+  object-fit: cover;
   width: 100%;
 }
 
@@ -1315,6 +1321,10 @@ marquee {
   text-align: center;
 	margin-bottom: 40px;
 	width: 100%;
+}
+
+.single-feature p {
+  margin: 10px;
 }
 
 .single-feature:hover .feature-icon{
@@ -2176,7 +2186,6 @@ marquee {
   border-top: 2px solid #242424; 
   background-color: #fff;
   display: inline;
-  float: left;
   padding: 25px 0;
   width: 100%;
 }
@@ -2459,6 +2468,13 @@ display: flex;
 
 body.modal-open {
   position: fixed;
+}
+  
+  /* MODALS */
+
+.modal-backdrop.in {
+    filter: alpha(opacity=70);
+    opacity: .7;
 }
 
 .modal-close-btn{
@@ -3444,6 +3460,9 @@ body.modal-open {
   }
   #telefonoLi {
     display: none;
+  }
+  #slider{
+    margin-top: 104px;
   }
   #menu-area {
     height: 64px !important;

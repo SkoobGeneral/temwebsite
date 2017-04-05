@@ -12,7 +12,7 @@
 	2. HOVER DROPDOWN MENU
 	3. BOOTSTRAP ACCORDION
 	4. SKILL PROGRESS BAR
-	5.LIGHTBOX ( FOR PORTFOLIO POPUP VIEW )
+	5. LIGHTBOX ( FOR PORTFOLIO POPUP VIEW )
 	6. MAIN SLIDER (SLICK SLIDER)
 	7. LOGIN MODAL WINDOW
 	8. COUNTER
@@ -33,11 +33,11 @@ jQuery(function($){
 	/* ----------------------------------------------------------- */
 	/*  0. HEADER
 	/* ----------------------------------------------------------- */ 
-	var documentWidth = $(window).width();
+	/*var documentWidth = $(window).width();
 	if(documentWidth<=416){
 		$('.navbar-brand img').css('width','120');
 	}
-	/*function resizeLogo(){
+	function resizeLogo(){
 		$(document).scroll(function() {
 			var top = $('html').offset().top;
 			var element = $("#header").offset().top;
@@ -57,7 +57,14 @@ jQuery(function($){
 		});
 	}*/
 	//resizeLogo();
-	$(window).on('resize orientationChange', function resize (event) {
+	$(document).ready(function() {
+	    $(window).on('orientationchange', function(event) {
+	        $('#slider').hide().delay(500).fadeTo("slow",1);
+	    });
+	});	
+
+	$(window).on('orientationChange', function resize (event) {
+    	alert();
     	documentWidth = $(window).width();
 		if (documentWidth<416){
 			$('.navbar-brand img').css('width','350');
@@ -68,9 +75,8 @@ jQuery(function($){
 			$('#menu-area').css('height','88');
 			return;
 		}
-	resize();
+	
 	});
-
 
 	
 	/* ----------------------------------------------------------- */
@@ -158,15 +164,30 @@ jQuery(function($){
 	/*  6. MAIN SLIDER (SLICK SLIDER)
 	/* ----------------------------------------------------------- */
 
+/*
+	$(".main-slider .single-slide").sort(function(){
+    return Math.random()*10 > 5 ? 1 : -1;
+	}).each(function(){
+	    var $t = $(this),
+	        color = $t.attr("class");
+	    $t.css({backgroundColor: color}).appendTo( $t.parent() );
+	});
+*/
+
 	jQuery('.main-slider').slick({
-		dots: true,
+		dots: false,
+		arrows: false,
 		infinite: true,
-		speed: 500,
+		respondTo: 'slider',
+		draggable: false,
 		autoplay: true,
 		accessibility: false,
 		fade: true,
+		speed: 200,
 		cssEase: 'linear'
 	});
+
+
 
 	/* ----------------------------------------------------------- */
 	/*  7. LOGIN MODAL WINDOW

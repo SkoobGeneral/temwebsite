@@ -90,6 +90,7 @@
             </a>
           </li>
           <li style="padding: 0 12px; width: 100%;">
+            <a data-target="#ultimas-noticias" data-toggle="modal"  href="#">
               <div style="display: inline-flex; width: 100%; height: 40px; line-height: 40px;">
                 <nobr><h4 style="padding-right: 12px;" id="newsTitle">Últimas Noticias:</h4></nobr>
                 <!--<div class="marquee left" style="height: 40px; line-height: 40px;">
@@ -97,9 +98,10 @@
                   <p><a href="http://www.hongkiat.com/blog/automate-dropbox-files-with-actions/">Automate Your Dropbox Files With Actions</a></p>
                 </div>-->
                 <marquee behavior="scroll" direction="left" SCROLLDELAY=150 id="news">
-                <span><nobr>Laura está embarazada. Simba va a tener un hermanito. Toca hacer oficio. 2 Laura está embarazada. Simba va a tener un hermanito. Toca hacer oficio.</nobr></span>
+                <span><nobr>- Tráfico pesado por la autopista norte - Calera colapsada por la paloma - Inundaciones por guaymaral</nobr></span>
                 </marquee>
               </div>
+            </a>
           </li>
           <li style="padding: 0;">
             <div class="header-login">
@@ -113,9 +115,8 @@
   </header>
   <!-- End header -->
   <!-- Start search modal window -->
-  <div aria-hidden="false" role="dialog" tabindex="-1" id="search-form" class="modal leread-modal fade in">
+  <!--  <div aria-hidden="false" role="dialog" tabindex="-1" id="search-form" class="modal leread-modal fade in">
     <div class="modal-dialog">
-      <!-- Start search section -->
       <div id="search-content" class="modal-content text-center">
         <div class="modal-header">
           <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button>
@@ -142,7 +143,7 @@
       </div>
     </div>
   </div>
-  <!-- End search modal window -->
+  End search modal window -->
 
   <!-- Start login modal window -->
   <div aria-hidden="false" role="dialog" tabindex="-1" id="login-form" class="modal leread-modal fade in">
@@ -151,7 +152,7 @@
       <div id="login-content" class="modal-content text-center">
         <div class="modal-header">
           <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button>
-          <h4 class="modal-title"><i class="fa fa-unlock-alt"></i>Iniciar Sesión - TemPortal</h4>
+          <h4 class="modal-title"><i class="fa fa-unlock-alt"></i> Iniciar Sesión - TemPortal</h4>
         </div>
         <div class="modal-body">
           <form>
@@ -204,6 +205,33 @@
     </div>
   </div>
   <!-- End login modal window -->
+
+
+  <!-- Start News modal window -->
+  <div aria-hidden="false" role="dialog" tabindex="-1" id="ultimas-noticias" class="modal leread-modal fade in">
+    <div class="modal-dialog">
+      <!-- Start login section -->
+      <div id="ultimas-noticias-content" class="modal-content text-center">
+        <div class="modal-header">
+          <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title"><i class="fa fa-newspaper-o"></i> Últimas Noticias - TemColombia</h4>
+        </div>
+        <div class="modal-body">
+          <div>
+            <ul style="font-size: 130%; color: rgba(51, 156, 195, 0.8);">
+              <li>- Tráfico pesado por la autopista norte</li>
+              <li>- Calera colapsada por la paloma</li>
+              <li>- Inundaciones por guaymaral</li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal-footer footer-box" style="text-align: right;">
+          <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">Cerrar</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End News modal window -->
 
   <!-- BEGIN MENU -->
   <section id="menu-area">      
@@ -275,21 +303,21 @@
       <div class="single-slide">
         <img src="assets/images/slider-2.png" alt="">
         <div class="slide-content">
-          <div style="float: right; background: #fff; border-radius: 10px; position: absolute; right: 5%; bottom: 5%;"><img class="certificationImage" src="assets/images/certification.png" />
+          <div style="float: right; background: #fff; border-radius: 10px; position: absolute; right: 5%; bottom: 5%;"><img class="certificationImage" src="assets/images/certification.png" style="max-width: 150px; max-height: 150px; padding: 5px; margin: 10px;" />
           </div>
         </div>
       </div>
       <div class="single-slide">
         <img src="assets/images/slider-3.png" alt="">
         <div class="slide-content">
-          <div style="float: right; background: #fff; border-radius: 10px; position: absolute; right: 5%; bottom: 5%;"><img class="certificationImage" src="assets/images/certification.png" />
+          <div style="float: right; background: #fff; border-radius: 10px; position: absolute; right: 5%; bottom: 5%;"><img class="certificationImage" src="assets/images/certification.png" style="max-width: 150px; max-height: 150px; padding: 5px; margin: 10px;" />
           </div>
         </div>
       </div>
       <div class="single-slide">
         <img src="assets/images/slider-4.png" alt="">
         <div class="slide-content">
-          <div style="float: right; background: #fff; border-radius: 10px; position: absolute; right: 5%; bottom: 5%;"><img class="certificationImage" src="assets/images/certification.png" />
+          <div style="float: right; background: #fff; border-radius: 10px; position: absolute; right: 5%; bottom: 5%;"><img class="certificationImage" src="assets/images/certification.png" style="max-width: 150px; max-height: 150px; padding: 5px; margin: 10px;" />
           </div>
         </div>
       </div>
@@ -577,7 +605,7 @@
 
 
   <!-- Start Service -->
-  <section id="service" style="display: none;">
+  <!--<section id="service" style="">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -590,7 +618,6 @@
         <div class="col-md-12">
           <div class="service-content">
             <div class="row">
-              <!-- Start single service -->
               <div class="col-md-4 col-sm-6">
                 <div class="single-service wow zoomIn">
                   <i class="fa fa-desktop service-icon"></i>
@@ -598,8 +625,6 @@
                   <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
                 </div>
               </div>
-              <!-- End single service -->
-              <!-- Start single service -->
               <div class="col-md-4 col-sm-6">
                 <div class="single-service wow zoomIn">
                   <i class="fa fa-paw service-icon"></i>
@@ -607,8 +632,6 @@
                   <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
                 </div>
               </div>
-              <!-- End single service -->
-              <!-- Start single service -->
               <div class="col-md-4 col-sm-6">
                 <div class="single-service wow zoomIn">
                   <i class="fa fa-magic service-icon"></i>
@@ -616,8 +639,6 @@
                   <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
                 </div>
               </div>
-              <!-- End single service -->
-              <!-- Start single service -->
               <div class="col-md-4 col-sm-6">
                 <div class="single-service wow zoomIn">
                   <i class="fa fa-shopping-cart service-icon"></i>
@@ -625,8 +646,6 @@
                   <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
                 </div>
               </div>
-              <!-- End single service -->
-              <!-- Start single service -->
               <div class="col-md-4 col-sm-6">
                 <div class="single-service wow zoomIn">
                   <i class="fa fa-mobile service-icon"></i>
@@ -634,8 +653,6 @@
                   <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
                 </div>
               </div>
-              <!-- End single service -->
-              <!-- Start single service -->
               <div class="col-md-4 col-sm-6">
                 <div class="single-service wow zoomIn">
                   <i class="fa fa-rocket service-icon"></i>
@@ -643,17 +660,16 @@
                   <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
                 </div>
               </div>
-              <!-- End single service -->
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </section>-->
   <!-- End Service -->
 
   <!-- Start Pricing table -->
-  <section id="pricing-table" style="display: none;">
+  <!--<section id="pricing-table">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -768,10 +784,9 @@
       </div>
     </div>
   </section>
-  <!-- End Pricing table -->  
-
+  <!-- End Pricing table -->
   <!-- Start Pricing table -->
-  <section id="our-team" style="display: none;">
+  <!--<section id="our-team">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -784,7 +799,6 @@
         <div class="col-md-12">
           <div class="our-team-content">
             <div class="row">
-              <!-- Start single team member -->
               <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="single-team-member">
                  <div class="team-member-img">
@@ -802,8 +816,6 @@
                  </div>
                 </div>
               </div>
-              <!-- Start single team member -->
-              <!-- Start single team member -->
               <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="single-team-member">
                  <div class="team-member-img">
@@ -821,8 +833,6 @@
                  </div>
                 </div>
               </div>
-              <!-- Start single team member -->
-              <!-- Start single team member -->
               <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="single-team-member">
                  <div class="team-member-img">
@@ -840,8 +850,6 @@
                  </div>
                 </div>
               </div>
-              <!-- Start single team member -->
-              <!-- Start single team member -->
               <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="single-team-member">
                  <div class="team-member-img">
@@ -859,7 +867,6 @@
                  </div>
                 </div>
               </div>
-              <!-- Start single team member -->
             </div>
           </div>
         </div>
@@ -869,7 +876,7 @@
   <!-- End Pricing table -->
   
   <!-- Start Testimonial section -->
-  <section id="testimonial" style="display: none;">
+  <!--<section id="testimonial">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
@@ -881,9 +888,7 @@
               </div>
             </div>
             <div class="col-md-12">
-              <!-- Start testimonial slider -->
               <div class="testimonial-slider">
-                <!-- Start single slider -->
                 <div class="single-slider">
                   <div class="testimonial-img">
                     <img src="assets/images/testi1.jpg" alt="testimonial image">
@@ -893,7 +898,6 @@
                     <h6>Bernice Neumann, <span>Designer</span></h6>
                   </div>
                 </div>
-                <!-- Start single slider -->
                 <div class="single-slider">
                   <div class="testimonial-img">
                     <img src="assets/images/testi3.jpg" alt="testimonial image">
@@ -903,7 +907,6 @@
                     <h6>John Dow, <span>CEO</span></h6>
                   </div>
                 </div>
-                <!-- Start single slider -->
                 <div class="single-slider">
                   <div class="testimonial-img">
                     <img src="assets/images/testi2.jpg" alt="testimonial image">
@@ -924,7 +927,7 @@
   <!-- End Testimonial section -->
 
   <!-- Start Clients brand -->
-  <section id="clients-brand" style="display: none;">
+  <!--<section id="clients-brand">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -979,7 +982,7 @@
   <!-- End Clients brand -->
 
   <!-- Start latest news -->
-  <section id="latest-news" style="display: none;">
+  <!--<section id="latest-news">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -992,7 +995,6 @@
         <div class="col-md-12">
           <div class="latest-news-content">
             <div class="row">
-              <!-- start single latest news -->
               <div class="col-md-4">
                 <article class="blog-news-single">
                   <div class="blog-news-img">
@@ -1008,7 +1010,6 @@
                   </div>
                 </article>
               </div>
-              <!-- start single latest news -->
               <div class="col-md-4">
                 <article class="blog-news-single">
                   <div class="blog-news-img">
@@ -1024,7 +1025,6 @@
                   </div>
                 </article>
               </div>
-              <!-- start single latest news -->
               <div class="col-md-4">
                 <article class="blog-news-single">
                   <div class="blog-news-img">
@@ -1049,19 +1049,18 @@
   <!-- End latest news -->
 
   <!-- Start subscribe us -->
-  <section id="subscribe" style="display: none;">
+  <!--<section id="subscribe">
     <div class="subscribe-overlay">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="subscribe-area">
               <h2 class="wow fadeInUp">Subscribe Newsletter</h2>
-              <!--
+
               <form action="" class="subscrib-form wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
                 <input type="text" placeholder="Enter Your E-mail..">
                 <button class="subscribe-btn" type="submit">Submit</button>
               </form>
-              -->
             </div>
           </div>
         </div>
@@ -1072,7 +1071,7 @@
 
   <!-- Start footer -->
   <footer id="footer">
-    <div class="container">
+    <div class="container wow fadeInUp" data-wow-offset="-100" data-wow-duration="1.0s">
       <div class="row">
         <div class="col-md-12 col-sm-12">
           <div class="footer-left text-center">
