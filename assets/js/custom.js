@@ -164,7 +164,7 @@ jQuery(function($){
 	/*  6. MAIN SLIDER (SLICK SLIDER)
 	/* ----------------------------------------------------------- */
 
-/*
+
 	$(".main-slider .single-slide").sort(function(){
     return Math.random()*10 > 5 ? 1 : -1;
 	}).each(function(){
@@ -172,7 +172,7 @@ jQuery(function($){
 	        color = $t.attr("class");
 	    $t.css({backgroundColor: color}).appendTo( $t.parent() );
 	});
-*/
+
 
 	jQuery('.main-slider').slick({
 		dots: false,

@@ -290,7 +290,7 @@ img{
 
 /*login modal window*/
 
-#login-form {
+.modal {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -357,10 +357,6 @@ img{
   outline: none;
 }
 /*login modal window*/
-#search-form {
-  background-color: rgba(0, 0, 0, 0.7);  
-}
-
 #search-form .modal-dialog {
   margin: 130px auto;
   width: 400px;
@@ -953,7 +949,7 @@ marquee {
 
 .single-slide img{
 	object-fit: cover;
-  width: 100%;
+  width: 100vw;
 }
 
 .slide-content {
@@ -963,6 +959,10 @@ marquee {
   position: absolute;
   top: 0;
   object-fit: cover;
+  width: 100%;
+}
+
+.slide-content img{
   width: 100%;
 }
 
@@ -2473,8 +2473,12 @@ body.modal-open {
   /* MODALS */
 
 .modal-backdrop.in {
-    filter: alpha(opacity=70);
-    opacity: .7;
+    filter: alpha(opacity=100);
+    opacity: 1;
+    background: url(assets/images/temlogo-large.png) no-repeat no-repeat;
+    background-color: white;
+    background-size: 90%;
+    background-position: 50% 90%;
 }
 
 .modal-close-btn{
