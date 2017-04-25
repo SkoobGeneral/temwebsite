@@ -9,7 +9,7 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
     <!-- Font Awesome -->
-    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">    
     <!-- Slick slider -->
@@ -81,39 +81,45 @@
 
     <!-- header bottom -->
     <div class="header-bottom">
-      <div class="">
-        <div class="row">
-          <div class="col-md-6 col-sm-6 col-xs-6">
-            <div class="header-contact">
-              <ul>
-                <li style="min-width: 82px;">
-                  <a href="tel:0316263995">
-                    <div class="phone">
-                      <i class="fa fa-phone"></i>
-                      6263995
-                    </div>
-                  </a>
-                </li>
-                <!--
-                <li>
-                  <a href="mailto:info@temcolombia.com">
-                    <div class="mail" style="min-width: 55px;">
-                      <i class="fa fa-envelope"></i>
-                      Correo
-                    </div>
-                  </a>
-                </li>
-                -->
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-6">
+      <div class="header-contact">
+        <ul>
+          <li style="padding: 12px 12px;">
+            <a href="tel:0316263995" style="padding: 0;">
+              <div class="phone" style="display: inline-flex;">
+                <i class="fa fa-phone"></i>
+                <span id="telefonoLi">6263995</span>
+              </div>
+            </a>
+          </li>
+          <li style="padding: 8px 12px;" id="musicLi">
+            <a href="javascript:;" id="musicTrigger" style=" padding: 0;">
+              <div class="fa fa-stack" style="min-width: 15px;">
+                <i class="fa fa-music fa-stack-1x"></i>
+                <i id="musicOff" class="fa fa-ban fa-stack-2x text-danger" style="display: none;"></i>
+              </div>
+            </a>
+          </li>
+          <li style="padding: 0 12px; width: 100%;">
+            <a data-target="#ultimas-noticias" data-toggle="modal"  href="#">
+              <div style="display: inline-flex; width: 100%; height: 40px; line-height: 40px;">
+                <nobr><h4 style="padding-right: 12px;" id="newsTitle">Últimas Noticias:</h4></nobr>
+                <!--<div class="marquee left" style="height: 40px; line-height: 40px;">
+                  <p style="width: 500px;"><a href="http://www.hongkiat.com/blog/wordpress-related-posts-without-plugins/">How to add WordPress Related Posts Without Plugins</a></p>
+                  <p><a href="http://www.hongkiat.com/blog/automate-dropbox-files-with-actions/">Automate Your Dropbox Files With Actions</a></p>
+                </div>-->
+                <marquee behavior="scroll" direction="left" SCROLLDELAY=150 id="news">
+                <span><nobr>- Tráfico pesado por la autopista norte - Calera colapsada por la paloma - Inundaciones por guaymaral</nobr></span>
+                </marquee>
+              </div>
+            </a>
+          </li>
+          <li style="padding: 0;">
             <div class="header-login">
-              <a class="search modal-form" data-target="#search-form" data-toggle="modal" href="#" id="search-icon"><i class="fa fa-question"></i></a>
+              <!--<a class="search modal-form" data-target="#search-form" data-toggle="modal" href="#" id="search-icon"><i class="fa fa-question"></i></a>-->
               <a class="login modal-form" data-target="#login-form" data-toggle="modal" href="#">Ingresar</a>
             </div>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </div>
   </header>
@@ -268,43 +274,76 @@
   </section>
   <!-- END MENU --> 
 
-  <section id="puntosEncuentro" class="container" style="vertical-align: top;">
-    <div class="row">
-        <div class="col-md-12">
-          <div class="title-area">
-            <h1 class="title wow pulse" data-wow-iteration="infinite" data-wow-duration="5.0s" data-wow-delay="1.0s"><img src="assets/images/temtext-small.png" style="max-width: 250px; margin:6px;" alt="TemColombia"><br>Nuestros Clientes</h1>
-          </div>
-        </div>
-      </div>
-    <div class="row text-center" style="margin: 20px;">
-      <div class="col-sm-12">
-        <h3>Colegios</h3>
-        <div>
-          <a class="wow fadeInUp" href="http://www.colegiotilata.edu.co/"><img src="assets/images/tilata.png" style="max-width: 200px; max-height: 200px; margin:6px;" alt="Tilatá"></a>
-          <a class="wow fadeInUp" href="http://colegioclaracasas.edu.co/"><img src="assets/images/ccm.png" style="max-width: 200px; max-height: 200px; margin:6px;" alt="Clara Casas Morales"></a>
-          <a class="wow fadeInUp" href="http://colegioekiraya.edu.co/"><img src="assets/images/ekiraya.png" style="max-width: 200px; max-height: 200px; margin:6px;" alt="Ekirayá"></a>
-          <a class="wow fadeInUp" href="http://www.colbuenco.edu.co/"><img src="assets/images/nsbc.jpg" style="max-width: 200px; max-height: 200px; margin:6px;" alt="Buen Consejo"></a>
-        </div>
-      </div>
-      <div class="col-sm-12">
-        <h3>Jardines Infantiles</h3>
-        <div>
-          <a class="wow fadeInUp" href="http://babidibu.edu.co/inicio"><img src="assets/images/babidibu.png" style="max-width: 200px; max-height: 200px; margin:6px;" alt="BaBidiBu"></a>
-          <a class="wow fadeInUp" href="http://mundomontessori.edu.co/"><img src="assets/images/montessori.png" style="max-width: 200px; max-height: 200px; margin:6px;" alt="Mundo Montessori"></a>
-          <a class="wow fadeInUp" href="http://www.huellas.edu.co/"><img src="assets/images/huellas.png" style="max-width: 200px; max-height: 200px; margin:6px;" alt="Huellas"></a>
-          <a class="wow fadeInUp" href="http://abrakadabra.edu.co/"><img src="assets/images/abk.png" style="max-width: 200px; max-height: 200px; margin:6px;" alt="Abrakadabra"></a>
-        </div>
-      </div>
-      <div class="col-sm-12">
-        <h3>Campamentos de Vacaciones</h3>
-        <div>
-          <a class="wow fadeInUp" href="http://www.clubelrancho.com/"><img src="assets/images/rancho.jpg" style="max-width: 300px; max-height: 200px; margin:6px;" alt="El Rancho"></a>
-          <a class="wow fadeInUp" href="http://www.clubguaymaral.com.co/"><img src="assets/images/guaymaral.png" style="max-width: 200px; max-height: 200px; margin:6px;" alt="Guaymaral"></a>
-        </div>
-      </div>
-      
-      
+  <section id="seguridadyprevencion" class="container" style="vertical-align: top;">
+    <div class="title-area">
+      <h1 class="title wow pulse" data-wow-iteration="infinite" data-wow-duration="5.0s" data-wow-delay="1.0s"><img src="assets/images/temtext-small.png" style="max-width: 250px; margin:6px;" alt="TemColombia"><br>Seguridad y Prevención</h1>
     </div>
+    <div class="row" style="margin: 5% 10%;">
+      <div class="col-md-12">
+        <p>TEM Colombia tiene el compromiso de velar por la seguridad de sus clientes, empleados y de la comunidad en su conjunto. Es por ello que ha implementado una estricta Política de Seguridad Vial para el desarrollo de sus operaciones. 
+        Nuestra política de seguridad va más allá del cumplimiento de la normatividad contemplada en el Código Nacional de Tránsito Terrestre y las disposiciones señaladas en el Plan Estratégico de Seguridad Vial, puesto que estamos convencidos de que solo a través de la búsqueda constante de la excelencia es posible minimizar los riesgos viales inherentes al desempeño de nuestra actividad.</p>
+      </div>
+      <div class="row" style="margin: 10px;">
+        <div class="col-md-6" style="margin-top: 5%; margin-bottom: 3%; text-align: center;">
+          <img class="border" src="assets/images/seguridad1.jpg" style="max-width: 90%;">
+        </div>
+        <div class="col-md-6" style="margin-top: 5%; margin-bottom: 3%; text-align: center;">
+          <img class="border" src="assets/images/seguridad2.jpg" style="max-width: 90%;">
+        </div>
+        <span class="line" style="margin-top: 5%;"></span>
+        <span class="anchor" id="mantenimiento"></span>
+        <div class="col-md-6" style="margin-top: 5%;">
+          <h3>Mantenimiento de los vehículos</h3>
+          <p>La seguridad de las operaciones es un objetivo fundamental para Tem Colombia.  La compañía posee una moderna plataforma tecnológica  de mantenimiento donde sus vehiculos son sometidas periódicamente a los estrictos programas establecidos de revisión preventiva, mantenimiento predictivo  y mantenimiento correctivo estando perfectamente alineado con lo dispuesto en la resolución 315 de 2013 del Ministerio de Transporte
+
+          La Base de Mantenimiento integrada por un selecto grupo de profesionales, técnicos y proveedores especializados.  El taller de propiedad de la empresa está  equipado con herramientas de vanguardia que le permite garantizar el mantenimiento correctivo y preventivo de su parque automotor. 
+
+          Existen evaluaciones periódicas a nuestros proveedores de otros servicios especializados de manteamiento con los cuales Tem Colombia se apoya.
+
+          Tem Colombia adelanta una estricta vigilancia y control del mantenimiento preventivo y correctivo a todo el parque automotor, por ende todos los vehiculos son revisados bimestralmente por un Centro de Diagnóstico Automotor CDA PREVICAR.</p>
+        </div>
+        <div class="col-md-6" style="margin-top: 10%; text-align: center;">
+          <img class="border" src="assets/images/seguridad3.jpg" style="max-width: 90%;">
+        </div>
+      </div>
+      <span class="line" style="margin-top: 5%;"></span>
+      <span class="anchor" id="entrenamiento"></span>
+      <div class="row" style="margin: 10px;">
+        <div class="col-md-6" style="margin-top: 5%; margin-bottom: 5%; text-align: center;">
+          <img class="border" src="assets/images/seguridad4.jpg" style="max-width: 90%;">
+        </div>
+        <div class="col-md-6" style="margin-top: 5%;">
+          <h3>Entrenamiento en seguridad vial</h3>
+
+          <p>El entrenamiento inicial de los operadores  es un proceso que tiene una duración de 120 horas. Durante este período, se entrenan de manera práctica y teórica, en temas asociados al servicio y a la seguridad, este programa es certificado finalmente por el SENA en competencias laborales y de seguridad vial.
+
+
+          La seguridad y prevención más los recursos técnicos, humanos y de infraestructura que le permiten desarrollar una labor de mantenimiento de primer orden que se ha visto reflejada en la calidad de su servicio y en la seguridad que entrega a sus usuarios.</p>
+        </div>
+      </div>
+      <span class="line" style="margin-top: 5%;"></span>
+      <div class="row" style="margin: 10px;">
+        <div class="col-md-6" style="margin-top: 5%;">
+          <h3>Entrenamiento de personal</h3>
+          <p>Tem Colombia realiza capacitaciones en estrategias de concientización de riesgos viales para todos los funcionarios y contratistas, por medio de la instrucción por parte del SENA en prevención de accidentes de tránsito y respeto de las señales de tránsito vehicular, que permitan la interiorización de conductas tendientes al manejo preventivo y defensivo, buscando el mejoramiento continuo en las actividades de transporte.</p>
+          <p>Adicionalmente, la empresa capacita a sus empleados y contratistas en competencias laborales y servicio al cliente, con el fin de promover un ambiente de tolerancia, cooperación y promoción de valores humanos.</p>
+        </div>
+        <div class="col-md-6" style="margin-top: 5%; margin-bottom: 5%; text-align: center;">
+          <img class="border" src="assets/images/seguridad5.png" style="max-width: 90%;">
+        </div>
+      </div>
+      <span class="line" style="margin-top: 5%;"></span>
+      <div class="row" style="margin: 10px;">
+        <div class="col-md-6" style="margin-top: 5%; text-align: center;">
+          <img class="border" src="assets/images/seguridad6.jpeg" style="max-width: 90%;">
+        </div>
+        <div class="col-md-6" style="margin-top: 5%;">
+          <h3>Bitácora diaria</h3>
+          <p>En su cimiento se encuentra también se encuentra las Bitacoras diarias que monitorean permanentemente los aspectos técnicos del parque automotor, manteniendo comunicación permanente con los conductores durante las rutas y al finalizar sus labores.
+          Al ser la seguridad el pilar fundamental en la tarea de mantenimiento de aviones, Tem Colombia tiene su programa de capacitación para todos sus operadores y técnicos a través del servicio nacional de aprendizaje SENA.</p>
+        </div>
+      </div>
+    </div>      
   </section>
 
   <!-- Start footer -->

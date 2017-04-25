@@ -51,7 +51,8 @@ body,html{
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	overflow-x: hidden !important;
+  min-width: 280px;
+	/*overflow-x: hidden !important;*/
 	color: #838282;
 }
 
@@ -60,6 +61,33 @@ body {
   position: absolute;
   background: url('../images/tembird.png') repeat;
   max-width: 100%;
+}
+
+.border {
+  border: 1px solid #19754c;
+  border-radius: 5px;
+}
+
+.line {
+  background-color: #bbb;
+  display: inline-block;
+  height: 1px;
+  width: 100%;
+}
+
+.anchor{
+  display: block;
+  height: 150px; /*same height as header*/
+  margin-top: -150px; /*same height as header*/
+  visibility: hidden;
+}
+@media(max-width:767px ){
+  .anchor{
+    display: block;
+    height: 100px; /*same height as header*/
+    margin-top: -100px; /*same height as header*/
+    visibility: hidden;
+  }
 }
 
 .bold{}
@@ -294,7 +322,7 @@ img{
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-#login-form .modal-dialog {
+#login-form .modal-dialog, #login-form-bitacora .modal-dialog {
   margin: 130px auto;
   width: 400px;
 }
@@ -427,7 +455,7 @@ img{
 marquee {
   font-size: 150%;
   vertical-align: middle;
-  color: rgba(51, 156, 195, 0.8);
+  color: rgba(255,0,0,0.7);
 }
 
 .marquee {
@@ -766,10 +794,10 @@ marquee {
 	background-color: #fff;
 	display: inline;
 	float: left;
-	width: 100%;
+	width: 100vw;
   position: fixed;
   z-index: 1000;
-  height: 120px;
+  min-height: 88px;
   top: 40px;
   border-bottom: 1px solid rgba(0,0,0,0.1);
 }
@@ -865,7 +893,7 @@ marquee {
 }
 
 .open .dropdown-menu {
-  top: 50px;
+  /*top: 50px;*/
 }
 
 .active > a.dd {
@@ -926,6 +954,7 @@ marquee {
 	object-fit: cover;
   width: 100%;
   height: 100%;
+  min-width: 280px;
 }
 
 .main-slider {
@@ -959,6 +988,7 @@ marquee {
   position: absolute;
   top: 0;
   object-fit: cover;
+  min-width: 280px;
   width: 100%;
 }
 
@@ -1272,7 +1302,7 @@ marquee {
 
 /*END TILES*/
 
-#feature, #afiliadosDashboard, #inscripciones, #puntosEncuentro, #calidad, #portfolio{
+#feature, #afiliadosDashboard, #inscripciones, #puntosEncuentro, #calidad, #portfolio, #seguridadyprevencion, #tecnologia, #comunicaciones{
   margin: 180px auto 15px;
 	background-color: #fff;
 	display: inline;
@@ -1328,7 +1358,7 @@ marquee {
 }
 
 .single-feature:hover .feature-icon{
-	/*color: #444;*/
+	color: #444;
 }
 
 .single-feature .feature-icon {
@@ -1350,7 +1380,7 @@ marquee {
 }
 
 .single-feature:hover .feat-title{
-	/*color: #444;*/
+	color: #3fc35f;
 }
 
 .single-feature p {
@@ -3403,7 +3433,7 @@ body.modal-open {
   .footer-right {
     text-align: center;
   }
-  #login-form .modal-dialog {  
+  #login-form .modal-dialog, #login-form-bitacora .modal-dialog {  
     width: 350px;
   }
   #search-form .modal-dialog {  
@@ -3460,7 +3490,7 @@ body.modal-open {
 
 @media(max-width:416px ){
   .navbar-brand img {
-    width: 160px !important;
+    /*width: 160px !important;*/
   }
   #telefonoLi {
     display: none;
@@ -3468,10 +3498,7 @@ body.modal-open {
   #slider{
     margin-top: 104px;
   }
-  #menu-area {
-    height: 64px !important;
-  }
-  #feature, #afiliadosDashboard, #inscripciones, #puntosEncuentro, #calidad, #portfolio {
+  #feature, #afiliadosDashboard, #inscripciones, #puntosEncuentro, #calidad, #portfolio, #seguridadyprevencion, #tecnologia, #comunicaciones {
     margin: 140px auto 15px;
   }
 }
@@ -3548,7 +3575,7 @@ body.modal-open {
     height: 40px;
     width: 95px;
   }
-  #login-form .modal-dialog {  
+  #login-form .modal-dialog, #login-form-bitacora .modal-dialog {  
     width: 320px;
   }
   #search input {
@@ -3601,7 +3628,7 @@ body.modal-open {
   .imageResponsive {
     float:none !important;
   }
-  #login-form .modal-dialog {  
+  #login-form .modal-dialog, #login-form-bitacora .modal-dialog {  
     width: 300px;
   }
   .footer-box {
@@ -3817,6 +3844,11 @@ body.modal-open {
   }
 }
 
+@media (min-width: 768px) {
+  #menu-area {
+    height: 120px !important;
+  }
+}
 @media (max-width: 768px) {
   
   /*EDIT*/
@@ -3964,3 +3996,8 @@ body.modal-open {
   }
 }
 
+@media (max-width: 280px) {
+  #slider {
+    display: none;
+  }
+}

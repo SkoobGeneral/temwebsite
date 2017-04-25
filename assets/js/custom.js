@@ -26,7 +26,9 @@
 	16. MULTIMEDIA
 	
 **/
-
+function zoomIn(){
+	console.log(this);			  
+	}
 jQuery(function($){
 
 
@@ -63,16 +65,15 @@ jQuery(function($){
 	    });
 	});	
 
-	$(window).on('orientationChange', function resize (event) {
-    	alert();
+	$(window).on('orientationchange', function resize (event) {
     	documentWidth = $(window).width();
-		if (documentWidth<416){
-			$('.navbar-brand img').css('width','350');
-			$('#menu-area').css('height','88');
+		if (documentWidth<768){
+			//$('.navbar-brand img').css('width','350');
+			//$('#menu-area').css('height','88');
 		}
 		else{
-			$('.navbar-brand img').css('width','200');
-			$('#menu-area').css('height','88');
+			//$('.navbar-brand img').css('width','200');
+			//$('#menu-area').css('height','88');
 			return;
 		}
 	

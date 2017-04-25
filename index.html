@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     
     <title>TemColombia</title>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
     <!-- Font Awesome -->
-    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">    
     <!-- Slick slider -->
@@ -152,7 +152,7 @@
       <div id="login-content" class="modal-content text-center">
         <div class="modal-header">
           <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button>
-          <h4 class="modal-title"><i class="fa fa-unlock-alt"></i> Iniciar Sesión - TemPortal</h4>
+          <h4 class="modal-title"><i class="fa fa-user-circle-o"></i> Servicios en Linea</h4>
         </div>
         <div class="modal-body">
           <form>
@@ -236,7 +236,7 @@
   <!-- BEGIN MENU -->
   <section id="menu-area">      
     <nav class="navbar navbar-default" role="navigation">  
-      <div class="container">
+      <div class="containerx">
         <div class="navbar-header">
           <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
           <button type="button" class="navbar-toggle collapsed" style="z-index: 1;" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -271,10 +271,12 @@
             -->
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Organización <span class="fa fa-angle-down"></span></a>
-              <ul class="dropdown-menu" role="menu">
+              <ul class="dropdown-menu" role="menu" style="top:60px;">
                 <li><a href="multimedia.html">Multimedia</a></li>
                 <li><a href="calidad.html">Gestión de Calidad</a></li>
-                <li><a href="#">Seguridad y Prevención</a></li>
+                <li><a href="seguridadyprevencion.html">Seguridad y Prevención</a></li>
+                <li><a href="comunicaciones.html">Comunicaciones</a></li>
+                <li><a href="tecnologia.html">Tecnología</a></li>
                 <li><a href="clientes.html">Nuestros Clientes</a></li>
                 <li><a href="politicas.html">Políticas</a></li>
                 <li><a href="bitacora.html">Bitácora de Flota</a></li>
@@ -360,46 +362,58 @@
           <div class="feature-content">
             <div class="row">
               <div class="col-md-4 col-sm-6">
-                <div class="single-feature wow zoomIn" data-wow-delay="0.1s">
-                  <i class="fa fa-shield feature-icon"></i>
-                  <h4 class="feat-title">Seguridad</h4>
-                  <p>TEM está comprometida con el mejoramiento continuo de la seguridad en sus operaciones, a través de la estricta vigilancia de su personal y el mantenimiento preventivo y correctivo de la flota.</p>
-                </div>
+                <a href="seguridadyprevencion.html">
+                  <div class="single-feature wow zoomIn" data-wow-delay="0.1s">
+                    <i class="fa fa-shield feature-icon"></i>
+                    <h4 class="feat-title">Seguridad</h4>
+                    <p>TEM está comprometida con el mejoramiento continuo de la seguridad en sus operaciones, a través de la estricta vigilancia de su personal y el mantenimiento preventivo y correctivo de la flota.</p>
+                  </div>
+                </a>
               </div>
               <div class="col-md-4 col-sm-6">
-                <div class="single-feature wow zoomIn" data-wow-delay="0.1s">
-                  <i class="fa fa-graduation-cap feature-icon"></i>
-                  <h4 class="feat-title">Sistema de Gestión de Calidad</h4>
-                  <p>La búsqueda de la excelencia en la prestación del servicio es nuestro compromiso, TEM cumple con la norma ISO 9001-2008 y cuenta con Certificación a su Sistema de Gestión.</p>
-                </div>
+                <a href="calidad.html">
+                  <div class="single-feature wow zoomIn" data-wow-delay="0.1s">
+                    <i class="fa fa-graduation-cap feature-icon"></i>
+                    <h4 class="feat-title">Sistema de Gestión de Calidad</h4>
+                    <p>La búsqueda de la excelencia en la prestación del servicio es nuestro compromiso, TEM cumple con la norma ISO 9001-2008 y cuenta con Certificación a su Sistema de Gestión.</p>
+                  </div>
+                </a>
               </div>
               <div class="col-md-4 col-sm-6">
-                <div class="single-feature wow zoomIn" data-wow-delay="0.1s">
-                  <i class="fa fa-desktop feature-icon"></i>
-                  <h4 class="feat-title">Tecnología</h4>
-                  <p>La tecnología de TEM busca facilitar el contacto con sus usuarios, permite realizar inscripciones, pagos en línea o realizar el seguimiento de la ruta a través del sistema de geoposicionamiento.</p>
-                </div>
+                <a href="tecnologia.html">
+                  <div class="single-feature wow zoomIn" data-wow-delay="0.1s">
+                    <i class="fa fa-desktop feature-icon"></i>
+                    <h4 class="feat-title">Tecnología</h4>
+                    <p>La tecnología de TEM busca facilitar el contacto con sus usuarios, permite realizar inscripciones, pagos en línea o realizar el seguimiento de la ruta a través del sistema de geoposicionamiento.</p>
+                  </div>
+                </a>
               </div>
               <div class="col-md-4 col-sm-6">
-                <div class="single-feature wow zoomIn" data-wow-delay="0.1s">
-                  <i class="fa fa-comments feature-icon"></i>
-                  <h4 class="feat-title">Comunicaciones</h4>
-                  <p>Todos nuestros procesos están enfocados hacia la comunicación fluida con nuestros usuarios, es por ello que innovamos en estrategias de comunicación que visibilicen nuestras actividades.</p>
-                </div>
+                <a href="comunicaciones.html">
+                  <div class="single-feature wow zoomIn" data-wow-delay="0.1s">
+                    <i class="fa fa-comments feature-icon"></i>
+                    <h4 class="feat-title">Comunicaciones</h4>
+                    <p>Todos nuestros procesos están enfocados hacia la comunicación fluida con nuestros usuarios, es por ello que innovamos en estrategias de comunicación que visibilicen nuestras actividades.</p>
+                  </div>
+                </a>
               </div>
               <div class="col-md-4 col-sm-6">
-                <div class="single-feature wow zoomIn" data-wow-delay="0.1s">
-                  <i class="fa fa-building feature-icon"></i>
-                  <h4 class="feat-title">Infraestructura</h4>
-                  <p>TEM cuenta con una infraestructura óptima para desarrollar su actividad administrativa y garantizar la vigilancia y control del mantenimiento preventivo y correctivo de sus vehículos.</p>
-                </div>
+                <a href="seguridadyprevencion.html#mantenimiento">
+                  <div class="single-feature wow zoomIn" data-wow-delay="0.1s">
+                    <i class="fa fa-building feature-icon"></i>
+                    <h4 class="feat-title">Infraestructura</h4>
+                    <p>TEM cuenta con una infraestructura óptima para desarrollar su actividad administrativa y garantizar la vigilancia y control del mantenimiento preventivo y correctivo de sus vehículos.</p>
+                  </div>
+                </a>
               </div>
               <div class="col-md-4 col-sm-6">
-                <div class="single-feature wow zoomIn" data-wow-delay="0.1s">
-                  <i class="fa fa-users feature-icon"></i>
-                  <h4 class="feat-title">Entrenamiento de Personal</h4>
-                  <p>El talento humano de TEM cuenta con instrucción permanente y capacitación por parte del SENA en seguridad vial, competencias laborales y manejo defensivo.</p>
-                </div>
+                <a href="seguridadyprevencion.html#entrenamiento">
+                  <div class="single-feature wow zoomIn" data-wow-delay="0.1s">
+                    <i class="fa fa-users feature-icon"></i>
+                    <h4 class="feat-title">Entrenamiento de Personal</h4>
+                    <p>El talento humano de TEM cuenta con instrucción permanente y capacitación por parte del SENA en seguridad vial, competencias laborales y manejo defensivo.</p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
