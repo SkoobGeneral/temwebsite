@@ -26,9 +26,6 @@
 	16. MULTIMEDIA
 	
 **/
-function zoomIn(){
-	console.log(this);			  
-	}
 jQuery(function($){
 
 
